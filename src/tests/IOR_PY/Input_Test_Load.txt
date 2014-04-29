@@ -1,0 +1,9 @@
+ost_stripe_list 2
+core_list 32
+client_core_limit 8
+numhosts 32
+client_wsize_gb 48
+iterations 1
+client_hostlist_file /1b/diag/test/H1
+testdir /1b/diag/test/test
+runmpi mpirun

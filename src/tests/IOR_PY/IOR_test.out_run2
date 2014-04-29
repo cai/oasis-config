@@ -1,0 +1,324 @@
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 12:24:56 2011
+Command line used: ../IOR-exe -a POSIX -b 32g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4249.49    4167.15     4208.32     41.17    4249.49    4167.15     4208.32     41.17 124.59564   EXCEL
+read         4904.59    4895.29     4899.94      4.65    4904.59    4895.29     4899.94      4.65 106.99897   EXCEL
+
+Max Write: 4249.49 MiB/sec (4455.91 MB/sec)
+Max Read:  4904.59 MiB/sec (5142.84 MB/sec)
+
+Run finished: Mon Sep 26 12:32:49 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 12:32:53 2011
+Command line used: ../IOR-exe -a POSIX -b 16g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 32 (2 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4236.19    4183.52     4209.86     26.34    4236.19    4183.52     4209.86     26.34 124.54312   EXCEL
+read         4869.42    3733.13     4301.27    568.15    4869.42    3733.13     4301.27    568.15 124.05577   EXCEL
+
+Max Write: 4236.19 MiB/sec (4441.97 MB/sec)
+Max Read:  4869.42 MiB/sec (5105.96 MB/sec)
+
+Run finished: Mon Sep 26 12:41:20 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 12:41:25 2011
+Command line used: ../IOR-exe -a POSIX -b 8g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 64 (4 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 8 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4253.63    4108.81     4181.22     72.41    4253.63    4108.81     4181.22     72.41 125.42869   EXCEL
+read         4829.16    4766.36     4797.76     31.40    4829.16    4766.36     4797.76     31.40 109.28233   EXCEL
+
+Max Write: 4253.63 MiB/sec (4460.26 MB/sec)
+Max Read:  4829.16 MiB/sec (5063.74 MB/sec)
+
+Run finished: Mon Sep 26 12:49:22 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 12:49:26 2011
+Command line used: ../IOR-exe -a POSIX -b 4g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 128 (8 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 4 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4133.19    4052.56     4092.87     40.31    4133.19    4052.56     4092.87     40.31 128.11020   EXCEL
+read         4778.76    4407.05     4592.91    185.86    4778.76    4407.05     4592.91    185.86 114.33884   EXCEL
+
+Max Write: 4133.19 MiB/sec (4333.96 MB/sec)
+Max Read:  4778.76 MiB/sec (5010.90 MB/sec)
+
+Run finished: Mon Sep 26 12:57:40 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 12:57:41 2011
+Command line used: ../IOR-exe -a POSIX -b 32g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4300.52    4160.30     4230.41     70.11    4300.52    4160.30     4230.41     70.11 123.96730   EXCEL
+read         4828.83    4776.20     4802.51     26.31    4828.83    4776.20     4802.51     26.31 109.17276   EXCEL
+
+Max Write: 4300.52 MiB/sec (4509.42 MB/sec)
+Max Read:  4828.83 MiB/sec (5063.39 MB/sec)
+
+Run finished: Mon Sep 26 13:05:38 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 13:05:42 2011
+Command line used: ../IOR-exe -a POSIX -b 16g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 32 (2 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4439.13    4385.37     4412.25     26.88    4439.13    4385.37     4412.25     26.88 118.82987   EXCEL
+read         5082.74    4766.22     4924.48    158.26    5082.74    4766.22     4924.48    158.26 106.57576   EXCEL
+
+Max Write: 4439.13 MiB/sec (4654.77 MB/sec)
+Max Read:  5082.74 MiB/sec (5329.64 MB/sec)
+
+Run finished: Mon Sep 26 13:13:24 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 13:13:27 2011
+Command line used: ../IOR-exe -a POSIX -b 8g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 64 (4 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 8 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4388.40    4356.47     4372.44     15.97    4388.40    4356.47     4372.44     15.97 119.90910   EXCEL
+read         5224.44    5191.64     5208.04     16.40    5224.44    5191.64     5208.04     16.40 100.67001   EXCEL
+
+Max Write: 4388.40 MiB/sec (4601.57 MB/sec)
+Max Read:  5224.44 MiB/sec (5478.22 MB/sec)
+
+Run finished: Mon Sep 26 13:20:57 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 13:21:00 2011
+Command line used: ../IOR-exe -a POSIX -b 4g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 128 (8 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 4 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4199.59    4180.75     4190.17      9.42    4199.59    4180.75     4190.17      9.42 125.12397   EXCEL
+read         5273.32    5237.26     5255.29     18.03    5273.32    5237.26     5255.29     18.03  99.76497   EXCEL
+
+Max Write: 4199.59 MiB/sec (4403.59 MB/sec)
+Max Read:  5273.32 MiB/sec (5529.48 MB/sec)
+
+Run finished: Mon Sep 26 13:28:39 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 13:28:39 2011
+Command line used: ../IOR-exe -a POSIX -b 32g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4427.27    4422.24     4424.76      2.51    4427.27    4422.24     4424.76      2.51 118.48975   EXCEL
+read         4387.21    4338.22     4362.72     24.50    4387.21    4338.22     4362.72     24.50 120.17838   EXCEL
+
+Max Write: 4427.27 MiB/sec (4642.33 MB/sec)
+Max Read:  4387.21 MiB/sec (4600.33 MB/sec)
+
+Run finished: Mon Sep 26 13:36:49 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 13:36:50 2011
+Command line used: ../IOR-exe -a POSIX -b 16g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 32 (2 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        4066.45    3979.27     4022.86     43.59    4066.45    3979.27     4022.86     43.59 130.34249   EXCEL
+read         4807.19    4640.93     4724.06     83.13    4807.19    4640.93     4724.06     83.13 111.01686   EXCEL
+
+Max Write: 4066.45 MiB/sec (4263.98 MB/sec)
+Max Read:  4807.19 MiB/sec (5040.71 MB/sec)
+
+Run finished: Mon Sep 26 13:45:04 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 13:45:06 2011
+Command line used: ../IOR-exe -a POSIX -b 8g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 64 (4 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 8 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        3333.72    3317.32     3325.52      8.20    3333.72    3317.32     3325.52      8.20 157.65684   EXCEL
+read         4667.58    4650.01     4658.80      8.78    4667.58    4650.01     4658.80      8.78 112.53763   EXCEL
+
+Max Write: 3333.72 MiB/sec (3495.66 MB/sec)
+Max Read:  4667.58 MiB/sec (4894.31 MB/sec)
+
+Run finished: Mon Sep 26 13:54:15 2011
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Sep 26 13:54:19 2011
+Command line used: ../IOR-exe -a POSIX -b 4g -F -t 1m -i 2
+Machine: Linux tcc-3-1.local
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 128 (8 per node)
+	repetitions        = 2
+	xfersize           = 1 MiB
+	blocksize          = 4 GiB
+	aggregate filesize = 512 GiB
+
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write        2761.48    2728.12     2744.80     16.68    2761.48    2728.12     2744.80     16.68 191.01826   EXCEL
+read         4534.26    4411.62     4472.94     61.32    4534.26    4411.62     4472.94     61.32 117.23526   EXCEL
+
+Max Write: 2761.48 MiB/sec (2895.62 MB/sec)
+Max Read:  4534.26 MiB/sec (4754.52 MB/sec)
+
+Run finished: Mon Sep 26 14:04:44 2011

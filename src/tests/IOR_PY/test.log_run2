@@ -1,0 +1,30 @@
+
+# Running IOR with following parameters
+#  client_core_limit: 8
+#  client_hostlist_file: /1b/diag/test/h1
+#  testdir: /1b/diag/test/test
+#  runmpi: mpirun
+#  iterations: 2
+#  numhosts: 16
+# -----------------
+#  ost_stripe_list: 1 4 16
+#  core_list: 16 32 64 128
+
+('Stripe used: ', '1')
+/opt/lustre/bin/lfs setstripe -c 1 -s 1m /1b/diag/test/test
+mpirun -hostfile h1 -np 16 ../IOR-exe -a POSIX -b 32g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h2 -np 32 ../IOR-exe -a POSIX -b 16g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h4 -np 64 ../IOR-exe -a POSIX -b 8g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h8 -np 128 ../IOR-exe -a POSIX -b 4g -F -t 1m -i 2 >> IOR_test.out
+('Stripe used: ', '4')
+/opt/lustre/bin/lfs setstripe -c 4 -s 1m /1b/diag/test/test
+mpirun -hostfile h1 -np 16 ../IOR-exe -a POSIX -b 32g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h2 -np 32 ../IOR-exe -a POSIX -b 16g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h4 -np 64 ../IOR-exe -a POSIX -b 8g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h8 -np 128 ../IOR-exe -a POSIX -b 4g -F -t 1m -i 2 >> IOR_test.out
+('Stripe used: ', '16')
+/opt/lustre/bin/lfs setstripe -c 16 -s 1m /1b/diag/test/test
+mpirun -hostfile h1 -np 16 ../IOR-exe -a POSIX -b 32g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h2 -np 32 ../IOR-exe -a POSIX -b 16g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h4 -np 64 ../IOR-exe -a POSIX -b 8g -F -t 1m -i 2 >> IOR_test.out
+mpirun -hostfile h8 -np 128 ../IOR-exe -a POSIX -b 4g -F -t 1m -i 2 >> IOR_test.out

@@ -1,0 +1,8 @@
+LUSTRE_SERVERS 16
+osts_per_server 4
+client_ost_limit 4
+client_core_limit 8
+client_hostlist_file ../h1
+ost_pool_name phase1.oss0 phase1.oss1 phase1.oss2 phase1.oss3 phase1.oss4 phase1.oss5 phase1.oss6 phase1.oss7 phase1.oss8 phase1.oss9 phase1.oss10 phase1.oss11 phase1.oss12 phase1.oss13 phase1.oss14 phase1.oss15
+testdir /phase1/diag/test
+runmpi mpirun

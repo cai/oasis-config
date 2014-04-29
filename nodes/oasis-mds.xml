@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart>
+
+
+	<description>
+	  Lustre MDS node for Data Oasis.
+	</description>
+
+	<copyright>
+	Copyright (c) 2000 - 2009 The Regents of the University of California.
+	All rights reserved. Rocks(r) v5.2 www.rocksclusters.org
+	
+	</copyright>
+
+	<changelog>
+	$Log: oasis-mds.xml,v $
+
+	</changelog>
+
+	<post>
+	  <file name="/etc/motd" mode="append">
+	    This is a Data Oasis Lustre (2.4.2) MDS node.
+	  </file>
+	</post>
+
+</kickstart>

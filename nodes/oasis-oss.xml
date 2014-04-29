@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart>
+
+	<description>
+	  Lustre OSS node for Data Oasis.
+	</description>
+
+	<copyright>
+	Copyright (c) 2000 - 2009 The Regents of the University of California.
+	All rights reserved. Rocks(r) v5.2 www.rocksclusters.org
+	</copyright>
+
+	<changelog>
+	$Log: oasis-oss.xml,v $
+	Revision 1.4  2012/01/24 23:11:49  cirving
+	Updated oais-config.xml so that it inserts network kernel parameters into /etc/sysctl.conf
+	
+	Revision 1.3  2011/11/13 17:10:07  cai
+	
+	
+	Add megaraid rpms
+	Update oasis-oss.xml
+	
+	Revision 1.2  2011/11/08 01:00:14  cai
+	
+	
+	create software raid configuration for 2 SSD drives in OSS nodes
+	
+	40GB for /
+	1GB for swap
+	rest goes to /state/partitioin1
+	
+	</changelog>
+
+<package>megaraid_sas</package>
+<package>dkms</package>
+<package>MegaCli</package>
+<package>Lib_Utils</package>
+
+        
+	<pre>
+	echo "clearpart --all --initlabel --drives=sda,sdb
+	part raid.01 --size=40000 --ondisk sda
+	part raid.02 --size=40000 --ondisk sdb
+	part swap --size=1024 --ondisk sda
+	part swap --size=1024 --ondisk sdb
+	part raid.11 --size=1 --grow --ondisk sda 
+	part raid.12 --size=1 --grow --ondisk sdb 
+	raid / --level=1 --device=md0 raid.01 raid.02
+	raid /state/partition1 --level=1 --device=md1 raid.11 raid.12" > /tmp/user_partition_info
+	</pre>
+
+	<post>
+	  <file name="/etc/motd" mode="append">
+	    This is a Data Oasis Lustre (2.4.2) OSS node.
+	  </file>
+
+	  <file name="/etc/rc.local" mode="append">
+	    #lustre
+	    echo 1 > /proc/sys/vm/drop_caches
+	  </file>
+	</post>
+
+</kickstart>
